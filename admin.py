@@ -96,8 +96,8 @@ def add_news():
     if not isLogged():
         return redirect(url_for('.login'))
 
-    title = pass
-    text = pass
+    title = 1
+    text = 1
     if db:
         try:
             cur = db.cursor()
