@@ -70,6 +70,7 @@ def close_db(error):
 @app.route('/')
 @app.route('/home')
 @app.route('/index')
+@app.route('/domoy')
 def index():
     return render_template("index.html")
 
@@ -91,10 +92,14 @@ def tracking_status():
     track = request.args.get('tracknumber')
     con = sql.connect("garant_logistica.db")
     cur = con.cursor()
-    cur.execute("SELECT status, date_status_users FROM order_status WHERE track = '" + track + "'")
+    cur.execute("SELECT status, date_status_users, payment, date_delivery, direction FROM order_status WHERE track = '" + track + "'")
     result = cur.fetchall()
     if len(result) != 0:
-        response = {"order_status": result[0][0], "date_order_users": result[0][1]}
+        response = {"order_status": result[0][0],
+                    "date_order_users": result[0][1],
+                    "payment": result[0][2],
+                    "date_delivery": result[0][3],
+                    "direction": result[0][4]}
     else:
         response = {"order_status": None, "date_order_users": None}
     return json.dumps(response)

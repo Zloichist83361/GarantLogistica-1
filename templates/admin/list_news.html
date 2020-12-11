@@ -1,0 +1,13 @@
+{% extends 'admin/base_admin.html' %}
+
+{% block content %}
+{{ super() }}
+<h1>{{title}}</h1>
+<section class="article-section">
+    <div class="article-add">
+        <input type="text" class="title-input">
+        <input type="text" class="text-input">
+        <input type="button" class="add-btn" value="Добавить!" onclick="add_article()">
+    </div>
+</section>
+{% endblock %}
