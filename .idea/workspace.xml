@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4b8dcdc-8e0a-406b-b1de-3222f7d69e0a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin.py" afterDir="false" />
+    <list default="true" id="e4b8dcdc-8e0a-406b-b1de-3222f7d69e0a" name="Default Changelist" comment="добавлена админ панель">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +36,7 @@
         </map>
       </branch-storage>
     </favorite-branches>
+    <option name="PREVIEW_PUSH_PROTECTED_ONLY" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="danila_branch" />
@@ -141,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607692785739</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="добавлена админ панель">
+      <created>1607692906191</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1607692906191</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -155,7 +163,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/danila_branch" />
+                        <option value="origin/nikita_branch" />
                       </list>
                     </value>
                   </entry>
