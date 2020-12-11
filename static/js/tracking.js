@@ -9,20 +9,25 @@
         var statustext4 = document.getElementById('status_4');
         var statustext5 = document.getElementById('status_5');
         var statustextNone = document.getElementById('status_none');
+        var tracknumber = document.getElementById('tracking-input').value;
         req.onload = function()
 
         { console.log(this.responseText);
           var response = JSON.parse(this.responseText);
           if(response.order_status && response.date_order_users) {
-
+                statustext1.innerHTML = "№ накладной " + tracknumber;
+                statustext2.innerHTML = "Статус груза: " + response.order_status;
+                statustext3.innerHTML = "Статус оплаты: " + response.payment;
+                statustext4.innerHTML = "Дата доставки: " + response.date_delivery;
+                statustext5.innerHTML = "Направление: " + response.direction;
             //result.innerHTML = "На " + response.date_order_users + " статус: " + response.order_status;
             container_status.classList.contains('open') ? container_status.classList.remove('open') : container_status.classList.add('open');
           } else {
             //result.innerHTML = "Нихуя";
-            container_status_none.classList.contains('open') ? container_status_none.classList.remove('open') : container_status_none.classList.add('open');
+            container_status_none.classList.contains('open-none') ? container_status_none.classList.remove('open-none') : container_status_none.classList.add('open-none');
           }
         }
-        req.open('GET', '/tracking/status?' + "tracknumber=" + document.getElementById('tracking-input').value, true);
+        req.open('GET', '/tracking/status?' + "tracknumber=" + tracknumber, true);
         req.setRequestHeader('content-type', 'application/x-www-form-urlencoded;charset=UTF-8');
         req.send();
 
