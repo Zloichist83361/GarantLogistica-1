@@ -9,6 +9,7 @@ formatter = logging.Formatter('[LINE:%(lineno)d]# %(asctime)s - %(levelname)s - 
 handler.setFormatter(formatter)
 logger.addHandler(handler)
 
+qwer=1
 
 class DataBase:
     def __init__(self, db):
