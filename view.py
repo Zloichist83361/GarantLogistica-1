@@ -70,6 +70,7 @@ def close_db(error):
 @app.route('/')
 @app.route('/home')
 @app.route('/index')
+@app.route('/domoy')
 def index():
     return render_template("index.html")
 
