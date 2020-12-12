@@ -1,31 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d5b0351-371f-470e-be8e-7d6fa625b115" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/css/profile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/profile/profile_adressbook.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/profile/profile_appeals.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/profile/profile_main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/profile/profile_managercontact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/profile/profile_mybonuses.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/profile/profile_myorders.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/profile/profile_notifications.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/profile/profile_ordersreports.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/profile/profile_security.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/profile/profile_settings.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/profile/profile_settlements.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gl.log" beforeDir="false" afterPath="$PROJECT_DIR$/gl.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/navmenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/navmenu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/trackbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/trackbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/samples/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/samples/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/samples/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/samples/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/samples/profile_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Article.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/samples/trackbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/samples/trackbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view.py" beforeDir="false" afterPath="$PROJECT_DIR$/view.py" afterDir="false" />
-    </list>
+    <list default="true" id="1d5b0351-371f-470e-be8e-7d6fa625b115" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -142,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607686604041</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="tracking, profile changes">
+      <created>1607760512210</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1607760512211</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -161,7 +144,8 @@
     <MESSAGE value="flask adding" />
     <MESSAGE value="db, tracking chandged" />
     <MESSAGE value="tracking edited, profile added" />
-    <option name="LAST_COMMIT_MESSAGE" value="tracking edited, profile added" />
+    <MESSAGE value="tracking, profile changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="tracking, profile changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
