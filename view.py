@@ -2,6 +2,7 @@ import sqlite3
 import sqlite3 as sql
 import json
 import logging
+from collections import namedtuple
 
 from flask_login import login_user, current_user, login_required
 from flask import render_template, url_for, request, redirect, flash, g, make_response
@@ -110,7 +111,8 @@ def tracking_status():
 @app.route('/reqlog', methods=["POST", "GET"])
 def reqlog_enter():
     if current_user.is_authenticated:
-        return redirect(url_for('profile'))
+        #return redirect(url_for('profile'))
+        return render_template('profile.html')
     return render_template('reqlog.html')
 
 
@@ -149,10 +151,14 @@ def log():
 # Регистрация -
 
 
-@app.route('/profile')
+@app.route('/profile/<param>')
 @login_required
-def profile():
-    return render_template("profile.html")
+def profile(param=''):
+    # loadpage = namedtuple("loadpage", "main settings extra")
+    # loadpage.main = False
+    # loadpage.settings = False
+    # loadpage.extra = False
+    return render_template("profile.html", loadpage=param)
 
 
 @app.route('/calculate')

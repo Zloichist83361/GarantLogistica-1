@@ -2,12 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d5b0351-371f-470e-be8e-7d6fa625b115" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/samples/profile_base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/profile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/profile/profile_adressbook.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/profile/profile_appeals.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/profile/profile_main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/profile/profile_managercontact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/profile/profile_mybonuses.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/profile/profile_myorders.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/profile/profile_notifications.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/profile/profile_ordersreports.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/profile/profile_security.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/profile/profile_settings.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/profile/profile_settlements.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gl.log" beforeDir="false" afterPath="$PROJECT_DIR$/gl.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/navmenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/navmenu.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/trackbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/trackbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/tracking.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/tracking.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/samples/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/samples/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/samples/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/samples/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/samples/profile_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Article.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/samples/trackbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/samples/trackbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view.py" beforeDir="false" afterPath="$PROJECT_DIR$/view.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +34,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Python Script" />
         <option value="HTML File" />
       </list>
     </option>
@@ -25,7 +43,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1lVQalCzCP8lZNHGr3h3N9POYRp" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -115,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607681587201</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="tracking edited, profile added">
+      <created>1607686604041</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607686604041</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -133,6 +160,18 @@
     <MESSAGE value="venv adding" />
     <MESSAGE value="flask adding" />
     <MESSAGE value="db, tracking chandged" />
-    <option name="LAST_COMMIT_MESSAGE" value="db, tracking chandged" />
+    <MESSAGE value="tracking edited, profile added" />
+    <option name="LAST_COMMIT_MESSAGE" value="tracking edited, profile added" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/view.py</url>
+          <line>160</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
