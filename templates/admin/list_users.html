@@ -1,0 +1,11 @@
+{% extends 'admin/base_admin.html' %}
+
+{% block content %}
+{{ super() }}
+<h1>{{title}}</h1>
+<form action="{{ url_for('.add_news') }}"  method="POST" class="sign-in-form">
+<input type="text" name="title" class="title-input">
+<input type="text" name="text" class="text-input">
+<input type="button"  class="btn-input" value="Добавить">
+    </form>
+{% endblock %}

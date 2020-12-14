@@ -92,23 +92,25 @@ def list_news():
     return render_template('admin/list_news.html', title='Добавить новость на сайт', menu=menu, list=list)
 
 
-@admin.route('/add-news')
+@admin.route('/add-news', methods=('GET', 'POST'))
 def add_news():
     if not isLogged():
         return redirect(url_for('.login'))
 
-    if request.form == 'POST':
-        title = request.args.get('title')
-        text = request.args.get('text')
-        try:
-            cur = db.cursor()
-            cur.execute(f'INSERT INTO articles (title, text) VALUES ' + title, text)
-            db.session.add()
-            db.session.commit()
-        except sqlite3.Error as e:
-            print('Ошибка добавления новости в БД' + str(e))
+    if request.method == 'POST':
+        title = request.form['title']
+        text = request.form['text']
 
+        if not title:
+            flash('Введите заголовок!')
+        else:
+            cur = db.cursor()
+            cur.execute(f'INSERT INTO articles (title, text) VALUES (?, ?)', (title, text))
+            db.commit()
+            db.close()
+            return redirect(url_for('.list_news'))
     return render_template('admin/add_news.html', title='Создать новость', menu=menu)
+
 
 
 @admin.route('/list-users')

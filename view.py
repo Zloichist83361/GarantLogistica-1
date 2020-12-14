@@ -152,8 +152,12 @@ def log():
 
 @app.route('/profile')
 @login_required
-def profile():
-    return render_template("profile.html")
+def profile(param=''):
+    # loadpage = namedtuple("loadpage", "main settings extra")
+    # loadpage.main = False
+    # loadpage.settings = False
+    # loadpage.extra = False
+    return render_template("profile.html", loadpage=param)
 
 
 @app.route('/calculate')
