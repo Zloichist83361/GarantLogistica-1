@@ -70,3 +70,26 @@ class DataBase:
         except sqlite3.Error as e:
             logger.error("Ошибка получения данных из БД " + str(e))
         return False
+
+    def getNews(self, id_news):
+        try:
+            self.__cur.execute(f'SELECT title, text FROM articles WHERE id = {id_news} LIMIT 1')
+            res = self.__cur.fetchone()
+            if res:
+                return res
+        except sqlite3.Error as e:
+            logger.error("Ошибка получения данных из БД " + str(e))
+
+        return False
+
+    def getAllNews(self):
+        try:
+            self.__cur.execute(f'SELECT id, title, text FROM articles')
+            res = self.__cur.fetchall()
+            if res:
+                return res
+        except sqlite3.Error as e:
+            logger.error("Ошибка получения данных из БД " + str(e))
+
+        return []
+

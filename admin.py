@@ -112,7 +112,6 @@ def add_news():
     return render_template('admin/add_news.html', title='Создать новость', menu=menu)
 
 
-
 @admin.route('/list-users')
 def list_users():
     if not isLogged():
