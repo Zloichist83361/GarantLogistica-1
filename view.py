@@ -110,7 +110,8 @@ def tracking_status():
 @app.route('/reqlog', methods=["POST", "GET"])
 def reqlog_enter():
     if current_user.is_authenticated:
-        return redirect(url_for('profile'))
+        #return redirect(url_for('profile'))
+        return render_template('profile.html')
     return render_template('reqlog.html')
 
 

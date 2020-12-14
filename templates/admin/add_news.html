@@ -3,12 +3,9 @@
 {% block content %}
 {{ super() }}
 <h1>{{title}}</h1>
-<ul class="list-posts">
-{% for p in list %}
-<li>
-<p class="annonce">Логин: {{ p.login }}</p>
-<p class="annonce">Email: {{ p.email }}</p>
-</li>
-{% endfor %}
-</ul>
+<form action="{{ url_for('.add_news') }}"  method="POST" class="sign-in-form">
+<input type="text" name="title" class="title-input">
+<input type="text" name="text" class="text-input">
+<input type="button"  class="btn-input" value="Добавить">
+    </form>
 {% endblock %}

@@ -5,8 +5,9 @@ from flask import Blueprint, render_template, url_for, redirect, session, reques
 admin = Blueprint('admin', __name__, template_folder='templates', static_folder='static')
 
 menu = [{'url': '.index', 'title': 'Панель'},
-        {'url': '.list_news', 'title': 'Добавить новость'},
-        {'url': '.listusers', 'title': 'Список пользователей'},
+        {'url': '.add_news', 'title': 'Создать новость'},
+        {'url': '.list_news', 'title': 'Добавить новость на сайт'},
+        {'url': '.list_users', 'title': 'Список пользователей'},
         {'url': '.logout', 'title': 'Выйти'}]
 
 
@@ -88,7 +89,7 @@ def list_news():
         except sqlite3.Error as e:
             print('Ошибка получения новости из БД' + str(e))
 
-    return render_template('admin/list_news.html', title='Добавить новость', menu=menu, list=list)
+    return render_template('admin/list_news.html', title='Добавить новость на сайт', menu=menu, list=list)
 
 
 @admin.route('/add-news')
@@ -96,22 +97,22 @@ def add_news():
     if not isLogged():
         return redirect(url_for('.login'))
 
-    title = 1
-    text = 1
-    if db:
+    if request.form == 'POST':
+        title = request.args.get('title')
+        text = request.args.get('text')
         try:
             cur = db.cursor()
             cur.execute(f'INSERT INTO articles (title, text) VALUES ' + title, text)
             db.session.add()
-            db.commit()
+            db.session.commit()
         except sqlite3.Error as e:
             print('Ошибка добавления новости в БД' + str(e))
 
-    return render_template('admin/add_news.html', title='Добавить новость', menu=menu)
+    return render_template('admin/add_news.html', title='Создать новость', menu=menu)
 
 
 @admin.route('/list-users')
-def listusers():
+def list_users():
     if not isLogged():
         return redirect(url_for('.login'))
 

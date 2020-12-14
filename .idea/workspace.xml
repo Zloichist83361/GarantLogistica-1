@@ -2,7 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4b8dcdc-8e0a-406b-b1de-3222f7d69e0a" name="Default Changelist" comment="добавлена админ панель">
+      <change afterPath="$PROJECT_DIR$/Article.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/profile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/profile/profile_adressbook.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/profile/profile_appeals.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/profile/profile_main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/profile/profile_managercontact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/profile/profile_mybonuses.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/profile/profile_myorders.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/profile/profile_notifications.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/profile/profile_ordersreports.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/profile/profile_security.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/profile/profile_settings.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/profile/profile_settlements.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/garant_logistica.db" beforeDir="false" afterPath="$PROJECT_DIR$/garant_logistica.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gl.log" beforeDir="false" afterPath="$PROJECT_DIR$/gl.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/navmenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/navmenu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/trackbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/trackbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/add_news.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/add_news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/list_news.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/list_news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/samples/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/samples/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/samples/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/samples/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/samples/trackbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/samples/trackbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view.py" beforeDir="false" afterPath="$PROJECT_DIR$/view.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607692906191</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="добавлена админ панель">
+      <created>1607693881205</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1607693881205</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,7 +196,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/nikita_branch" />
+                        <option value="origin/danila_branch" />
                       </list>
                     </value>
                   </entry>
