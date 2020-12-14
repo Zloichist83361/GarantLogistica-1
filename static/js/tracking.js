@@ -1,7 +1,7 @@
 const container_status = document.querySelector('.container-status');
  const container_status_none = document.querySelector('.container-status-none');
 
- function do_ajax() {
+ function check_status() {
         var req = new XMLHttpRequest();
         var statustext1 = document.getElementById('status_1');
         var statustext2 = document.getElementById('status_2');

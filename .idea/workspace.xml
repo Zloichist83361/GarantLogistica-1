@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4b8dcdc-8e0a-406b-b1de-3222f7d69e0a" name="Default Changelist" comment="добавление новостей в админ-панели">
-      <change afterPath="$PROJECT_DIR$/templates/news.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/samples/news_currentnew.html" afterDir="false" />
+    <list default="true" id="e4b8dcdc-8e0a-406b-b1de-3222f7d69e0a" name="Default Changelist" comment="1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/garant_logistica.db" beforeDir="false" afterPath="$PROJECT_DIR$/garant_logistica.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/list_news.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/list_news.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/list_users.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/list_users.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/samples/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/samples/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view.py" beforeDir="false" afterPath="$PROJECT_DIR$/view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gl.log" beforeDir="false" afterPath="$PROJECT_DIR$/gl.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/admin_panel.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles_news.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/tracking.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/tracking.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/samples/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/samples/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +184,21 @@
       <option name="project" value="LOCAL" />
       <updated>1607938781590</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="новости отображаются">
+      <created>1607948924202</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1607948924202</updated>
+    </task>
+    <task id="LOCAL-00011" summary="1">
+      <created>1607949035682</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1607949035682</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -221,8 +230,9 @@
     <MESSAGE value="проверка" />
     <MESSAGE value="test" />
     <MESSAGE value="добавлена админ панель" />
-    <MESSAGE value="1" />
     <MESSAGE value="добавление новостей в админ-панели" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавление новостей в админ-панели" />
+    <MESSAGE value="новости отображаются" />
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
 </project>

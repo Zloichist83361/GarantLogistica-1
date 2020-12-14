@@ -9,19 +9,20 @@
 
 {% if allnews=='allnews' %}
 
-<!--{{ super() }}-->
-    <hr>
-    <h2>Список статей</h2>
+{{ super() }}
+<figure class="baha1493">
+  <figcaption>
+    <h2 class="news-list">Список статей</h2>
 <ul class="list-posts">
         {% for p in posts %}
             <li>
-                <p class="title"><a href="{{ url_for('show_news', id_news=p.id)}}">{{p.title}}</a></p>
+                <h3 class="title"><a href="{{ url_for('show_news', id_news=p.id)}}">{{p.title}}</a></h3>
                 <p class="annonce">{{ p.text[:50]}}</p>
             </li>
         {% endfor %}
     </ul>
-
-
+    </figcaption>
+</figure>
 {% else %}
 {% include 'samples/news_currentnew.html' %}
 {% endif %}
