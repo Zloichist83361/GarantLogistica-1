@@ -59,18 +59,6 @@ class DataBase:
 
         return False
 
-    def getArticle(self, article_id):
-        try:
-            self.__cur.execute(f"SELECT * FROM articles WHERE id = {article_id} LIMIT 1")
-            res = self.__cur.fetchone()
-            if not res:
-                logger.info("Статья не найдена")
-                return False
-            return res
-        except sqlite3.Error as e:
-            logger.error("Ошибка получения данных из БД " + str(e))
-        return False
-
     def getNews(self, id_news):
         try:
             self.__cur.execute(f'SELECT title, text FROM articles WHERE id = {id_news} LIMIT 1')
