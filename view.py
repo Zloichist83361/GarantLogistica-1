@@ -2,10 +2,10 @@ import sqlite3
 import sqlite3 as sql
 import json
 import logging
-from collections import namedtuple
 
 from flask_login import login_user, current_user, login_required
 from flask import render_template, url_for, request, redirect, flash, g, make_response
+from werkzeug.exceptions import abort
 
 from werkzeug.security import generate_password_hash, check_password_hash
 
@@ -171,3 +171,22 @@ def calculate():
 @login_required
 def order():
     return render_template("index.html")
+
+
+@app.route('/news')
+def show_all_news():
+    db = get_db()
+    dbase = DataBase(db)
+    allnews = dbase.getAllNews()
+    return render_template('news.html', allnews='allnews', posts=allnews)
+
+
+@app.route('/news/<int:id_news>')
+def show_news(id_news):
+    db = get_db()
+    dbase = DataBase(db)
+    title, text = dbase.getNews(id_news)
+    if not title:
+        abort(404)
+
+    return render_template('news.html', title=title, text=text)
