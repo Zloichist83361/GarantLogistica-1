@@ -15,10 +15,8 @@
     <h2 class="news-list">Список статей</h2>
 <ul class="list-posts">
         {% for p in posts %}
-            <li>
                 <h3 class="title"><a href="{{ url_for('show_news', id_news=p.id)}}">{{p.title}}</a></h3>
                 <p class="annonce">{{ p.text[:50]}}</p>
-            </li>
         {% endfor %}
     </ul>
     </figcaption>
