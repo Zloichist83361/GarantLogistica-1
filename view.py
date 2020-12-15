@@ -142,14 +142,13 @@ def log():
         user = dbase.getUserByLogin(request.form['login'])
         if user and check_password_hash(user['psw'], request.form['psw']):
             userlogin = UserLogin().create(user)
-            login_user(userlogin)
+            login_user(userlogin, remember=request.form['remember'])
             flash("Вы успешно зашли")
             return redirect(url_for("index"))
 
         flash("Неверная пара логин/пароль")
     return render_template('reqlog.html')
 # Регистрация -
-
 
 @app.route('/profile')
 @login_required
@@ -190,3 +189,11 @@ def show_news(id_news):
         abort(404)
 
     return render_template('news.html', title=title, text=text)
+
+
+@app.route('/city', methods=['POST', 'GET'])
+def list_city():
+    db = get_db()
+    dbase = DataBase(db)
+    city = dbase.getCity()
+    return render_template('test_dropdown_city.html', cities=city)

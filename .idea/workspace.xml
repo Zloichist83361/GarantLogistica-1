@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4b8dcdc-8e0a-406b-b1de-3222f7d69e0a" name="Default Changelist" comment="1">
+      <change afterPath="$PROJECT_DIR$/static/css/style_city.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/searchicon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/city.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/test_dropdown_city.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/garant_logistica.db" beforeDir="false" afterPath="$PROJECT_DIR$/garant_logistica.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gl.log" beforeDir="false" afterPath="$PROJECT_DIR$/gl.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/styles_news.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles_news.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/reqlog.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/reqlog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view.py" beforeDir="false" afterPath="$PROJECT_DIR$/view.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +86,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GL\GarantLogistica\static\css" />
       <recent name="D:\GL\GarantLogistica\templates" />
       <recent name="D:\GL\GarantLogistica\templates\admin" />
     </key>
@@ -201,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607955945034</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="1">
+      <created>1608011653850</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1608011653850</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
