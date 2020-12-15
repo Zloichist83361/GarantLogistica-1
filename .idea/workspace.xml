@@ -2,13 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d5b0351-371f-470e-be8e-7d6fa625b115" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/css/news.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/calculate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/calculate2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/calculate3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/calculate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/calculate2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/calculate3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/garant_logistica.db" beforeDir="false" afterPath="$PROJECT_DIR$/garant_logistica.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gl.log" beforeDir="false" afterPath="$PROJECT_DIR$/gl.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/navmenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/navmenu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/news.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/news.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/trackbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/trackbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/base_admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/base_admin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/samples/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/samples/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/samples/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/samples/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/samples/news_currentnew.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/samples/news_currentnew.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view.py" beforeDir="false" afterPath="$PROJECT_DIR$/view.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +53,16 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../gl_py_site_copy" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/css" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\gl_py_site_git\GarantLogistica\static\css" />
+      <recent name="C:\gl_py_site_git\GarantLogistica\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\gl_py_site_git\GarantLogistica\static\img" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.main">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -149,7 +172,21 @@
       <option name="project" value="LOCAL" />
       <updated>1607958184365</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="news changed">
+      <created>1607964522736</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607964522736</updated>
+    </task>
+    <task id="LOCAL-00009" summary="news changed">
+      <created>1607964540380</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1607964540380</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,6 +209,7 @@
     <MESSAGE value="tracking, profile changes" />
     <MESSAGE value="docker added" />
     <MESSAGE value="docker" />
-    <option name="LAST_COMMIT_MESSAGE" value="docker" />
+    <MESSAGE value="news changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="news changed" />
   </component>
 </project>

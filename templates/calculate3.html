@@ -1,0 +1,49 @@
+{% extends 'samples/base.html' %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+{% include 'samples/header.html' %}
+
+
+{% block content %}
+    <section class="calculate">
+        <div class="container calculate-container">
+
+            <div>
+                <p>Откуда</p>
+                <input type="text" class="city-from">
+            </div>
+            <div>
+                <p>Куда</p>
+                <input type="text" class="city-to">
+                
+            </div>
+
+            <div>
+                <p>Кол-во мест</p>
+                <input type="text" class="places">
+
+            </div>
+
+            <div>
+                <p>Вес груза</p>
+                <input type="text" class="weight">
+            </div>
+
+            <div>
+                <p>Объем</p>
+                <input type="text" class="volume">
+            </div>
+            <div>type/price1</div>
+            <div>type/price2</div>
+            <div>type/price3</div>
+            <div>type/price4</div>
+            <div>type/price5</div>
+            <div>type/price6</div>
+
+        </div>
+    </section>
+
+
+{% endblock %}

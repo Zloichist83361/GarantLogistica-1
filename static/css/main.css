@@ -1,4 +1,36 @@
 body {
     background: url(img/fon-sv.jpg) top;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100%
+    /*z-index: -3;*/
+}
+
+.content-all{
+    flex: 1 0 auto;
+}
+
+.footer-block{
+    background: #bcbcbc;
+    /*z-index: 1;*/
+    flex: 0 0 auto;
+}
+
+.footer-container{
+    /*z-index: 2;*/
+}
+
+.row{
+    /*z-index: 5;*/
+}
+
+.link-secondary{
+    /*z-index: 7;*/
+    color: rgb(0, 112, 65);
+}
+
+.link-secondary:hover{
+       color: #fff;
+       font-size: 20px;
 }

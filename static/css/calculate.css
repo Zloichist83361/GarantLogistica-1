@@ -1,0 +1,114 @@
+.calculate{
+    display: flex;
+    flex-direction: column;
+    margin-top: 11px;
+}
+
+.calculate-container{
+
+    background: #adadad;
+}
+
+.calculate-cities{
+   top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+   background: #adadad;
+}
+
+.calculate-dimensions{
+top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background: #aa6e6e;
+}
+
+.calculate-dimensions-label{
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background: #bababa;
+    margin-top: 20px;
+    height: 14px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.calculations-header{
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background: #adadad;
+    margin-top: 10px;
+    height: 14px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.calculations-standart{
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background: #aa6e6e;
+}
+
+.calculations-express{
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background: #adadad;
+}
+
+.calc-label {
+    width: 150px;
+
+}
+
+.calc-label-2{
+    width: 100px;
+}
+
+.margin-left{
+    margin-left: 50px;
+}
+
+.dim-places{
+    width: 90px;
+
+}
+
+.dim-weight{
+    width: 90px;
+
+}
+
+.dim-volume{
+    width: 110px;
+
+}
+
+.dimensions{
+    padding: 0 10px;
+}
+
+.calculations-label-places{
+    width: 150px;
+}

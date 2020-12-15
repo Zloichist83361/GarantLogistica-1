@@ -25,7 +25,7 @@ logger.addHandler(handler)
 
 @login_manager.user_loader
 def load_user(user_id):
-    logger.info("Пользователь вошел")
+    #logger.info("Пользователь вошел")
     return UserLogin().fromDB(user_id, dbase)
 
 
@@ -162,9 +162,8 @@ def profile(param=''):
 
 
 @app.route('/calculate')
-@login_required
 def calculate():
-    return render_template("index.html")
+    return render_template("calculate3.html")
 
 
 @app.route('/order')

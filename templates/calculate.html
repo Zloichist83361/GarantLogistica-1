@@ -1,0 +1,60 @@
+{% extends 'samples/base.html' %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+{% include 'samples/header.html' %}
+
+
+{% block content %}
+    <section class="calculate">
+        <div class="container calculate-container">
+
+            <div class="calculate-cities row">
+                <input type="text" class="city-from" placeholder="Город отправления">
+                <input type="text" class="city-for" placeholder="Город поулчения">
+            </div>
+
+             <div class="calculate-dimensions-label row">
+                 <p class="calc-label-2 calculations-label-places">Количество мест</p>
+                 <p class="calc-label-2 calculations-label-price">Вес</p>
+                 <p class="calc-label-2 calculations-label-time">Объем</p>
+            </div>
+
+            <div class="calculate-dimensions row">
+                <div class="dimensions"><input type="text" class="dim-places" placeholder="Количество мест"></div>
+                <div class="dimensions"><input type="text" class="dim-weight" placeholder="Вес"></div>
+                <div class="dimensions"><input type="text" class="dim-volume" placeholder="Объем"></div>
+            </div>
+
+            <div class="calculations">
+                <div class="calculations-header row">
+                    <p class="calc-label calculations-label-empty"></p>
+                    <p class="calc-label calculations-label-price margin-left">Стандарт</p>
+                    <p class="calc-label calculations-label-time margin-left">Экспресс</p>
+
+                </div>
+
+                <div class="calculations-standart row">
+                    <p class="calc-label calculations-standart-label">Стоимость</p>
+                    <p class="calc-label calculations-standart-price margin-left">300 р.</p>
+                    <p class="calc-label calculations-standart-time margin-left">2 дня</p>
+                </div>
+
+                <div class="calculations-express row">
+                    <p class="calc-label calculations-express-label">Срок</p>
+                    <p class="calc-label calculations-express-price margin-left">500 р.</p>
+                    <p class="calc-label calculations-express-time margin-left">1 день</p>
+                </div>
+            </div>
+
+            <div class="calculations-express row">
+                <input type="button" class="make-oreder-btn" value="Оформить заявку">
+            </div>
+        </div>
+
+
+    </section>
+
+
+{% endblock %}

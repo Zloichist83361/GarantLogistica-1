@@ -49,3 +49,22 @@
     text-align: center;
     position: relative;
 }
+
+.article-title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.article-date{
+    text-align: right;
+    font-size: 14px;
+    font-weight: 100;
+    font-style: italic;
+    border-bottom: 2px solid black;
+}
+
+.article-title-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
