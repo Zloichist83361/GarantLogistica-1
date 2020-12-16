@@ -196,4 +196,6 @@ def list_city():
     db = get_db()
     dbase = DataBase(db)
     city = dbase.getCity()
-    return render_template('test_dropdown_city.html', cities=city)
+    return render_template('deliveryCalculator.html', cities=city)
+
+

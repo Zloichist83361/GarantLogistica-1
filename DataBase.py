@@ -91,4 +91,3 @@ class DataBase:
             logger.error("Ошибка получения данных из БД " + str(e))
 
         return []
- # Where name_city LIKE ' + "'" + input_value + "'" + '%'
