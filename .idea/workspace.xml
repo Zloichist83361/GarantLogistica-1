@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4b8dcdc-8e0a-406b-b1de-3222f7d69e0a" name="Default Changelist" comment="выпадающий список">
-      <change afterPath="$PROJECT_DIR$/templates/deliveryCalculator.html" afterDir="false" />
+    <list default="true" id="e4b8dcdc-8e0a-406b-b1de-3222f7d69e0a" name="Default Changelist" comment="список">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/garant_logistica.db" beforeDir="false" afterPath="$PROJECT_DIR$/garant_logistica.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/city.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/test_dropdown_city.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view.py" beforeDir="false" afterPath="$PROJECT_DIR$/view.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608043313095</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="список">
+      <created>1608127815749</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1608127815750</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -258,6 +259,7 @@
     <MESSAGE value="новости отображаются" />
     <MESSAGE value="1" />
     <MESSAGE value="выпадающий список" />
-    <option name="LAST_COMMIT_MESSAGE" value="выпадающий список" />
+    <MESSAGE value="список" />
+    <option name="LAST_COMMIT_MESSAGE" value="список" />
   </component>
 </project>
