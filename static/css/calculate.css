@@ -13,46 +13,80 @@
     margin: 0;
 }
 
+.grid-container input {
+    width: 80px;
+}
+
+.grid-container1{
+    padding: 0;
+    margin: 0;
+}
+
+.grid-container1 p {
+    padding: 0;
+    margin: 0;
+}
+
 .calculate-container{
+
     display: grid;
 	grid-template-columns: repeat(6, 1fr);
-	grid-gap: 5px;
+	grid-template-rows: 120px 120px;
+	grid-auto-rows: 30px;
+	/*grid-template-areas:
+    "city1 city1 cityimg cityimg city2 city2"
+    "places places weight weight volume volume"
+    "pick pick pick pick pick pick"
+    "deliv deliv deliv deliv deliv deliv"
+    "empty empty labelprice labelprice labeltime labeltime"
+    "standart standart stdprive stdprice stdtime stdtime"
+    "express express exprice exprice extime extime";*/
+
 }
 
 .calculate-container div:nth-child(1){
     grid-column: 1 / 4;
     grid-row: 1;
+    align-self: end;
+    justify-self: center;
 
 }
 
 .calculate-container div:nth-child(2){
     grid-column: 4 / -1;
     grid-row: 1;
+    align-self: end;
+    justify-self: center;
 }
 
 .calculate-container div:nth-child(3){
     grid-column: 1 / 3;
     grid-row: 2;
+    justify-self: end;
 }
 
 .calculate-container div:nth-child(4){
     grid-column: 3 / 5;
     grid-row: 2;
+    justify-self: center;
 }
 
 .calculate-container div:nth-child(5){
     grid-column: 5 / -1;
     grid-row: 2;
+    justify-self: start;
 }
 
 .calculate-container div:nth-child(6){
     grid-column: 1 / -1;
     grid-row: 3;
+    justify-self: center;
 }
 
 .calculate-container div:nth-child(7){
     grid-column: 1 / -1;
     grid-row: 4;
+    justify-self: center;
 }
 
 .calculate-container div:nth-child(8){
@@ -96,23 +130,23 @@ grid-column: 5 / -1;
 }
 
 .calculate-container div {
-	background-color: #28314E;
-	border: 1px solid #212941;
+	/*background-color: #28314E;
+	border: 1px solid #212941;*/
 	border-radius: 5px;
-	padding: 8px 15px;
-	color: #ffffff;
+	/*padding: 8px 15px;*/
+	color: #000;
 	font-size: 18px;
 	font-family: roboto;
 }
 
 .calculate-container div:nth-child(odd) {
-	background-color: #475477;
+	/*background-color: #475477;*/
 }
 
 .row-1{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: top;
     justify-content: center;
 }
 
@@ -124,9 +158,45 @@ grid-column: 5 / -1;
     justify-content: center;
 }
 
+.right-items{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: right;
+}
+
+.left-items{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+}
+
 .row-1 .check-box{
     width: 18px;
     height: 18px;
     border: 5px solid #dddddd;
     background-color: #ffffff;
+}
+
+.input-field-city i {
+    text-align: center;
+    line-height: 55px;
+    color: #acacac;
+    transition: 0.5s;
+    font-size: 1.1rem;
+}
+
+.input-field-city input {
+    border: 4px solid #212941;
+}
+
+.color1{
+    background-color: #387a2a;
+}
+
+.color2{
+    background-color: #db804b;
 }

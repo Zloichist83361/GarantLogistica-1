@@ -39,23 +39,23 @@ function calc_price(){
                 if(pick == true){
                     st_full = st_full + response.expedition;
                     ex_full = ex_full + response.expedition;
-                    console.log(pick);
+                    //console.log(pick);
 
                 }
 
                   if(deliver == true){
                     st_full = st_full + response.expedition;
                     ex_full = ex_full + response.expedition;
-                    console.log(deliver);
+                    //console.log(deliver);
                 }
 
                    st_full = st_full + response.price;
-                   ex_full = ex_full + response.price;
+                   ex_full = ex_full + response.price_express;
 
                 st_price.innerHTML = st_full + " р.";
                 st_time.innerHTML = response.timedeliver;
                 ex_price.innerHTML = ex_full + " р.";
-                ex_time.innerHTML = response.timedeliver;
+                ex_time.innerHTML = response.timedeliver_express;
 
             }else{
 

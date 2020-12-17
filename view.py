@@ -127,8 +127,7 @@ def calc_price():
 
     con = sql.connect("garant_logistica.db")
     cur = con.cursor()
-    #strtoexec = "SELECT city1, city2, weight, price, timedeliver FROM prices WHERE city1 = '" + s[0] + "' AND city2 = '" + s[1] + "' AND weight >= " + str(maxweight)
-    cur.execute("SELECT city1, city2, weight, price, timedeliver, expedition FROM prices WHERE city1 = '" + s[0] + "' AND city2 = '" + s[1] + "' AND weight >= " + str(maxweight))
+    cur.execute("SELECT city1, city2, weight, price, timedeliver, expedition, price_express, timedeliver_express FROM prices WHERE city1 = '" + s[0] + "' AND city2 = '" + s[1] + "' AND weight >= " + str(maxweight))
     result = cur.fetchall()
     if len(result) != 0:
         response = {"city1": result[0][0],
@@ -136,7 +135,9 @@ def calc_price():
                     "weight": result[0][2],
                     "price": result[0][3],
                     "timedeliver": result[0][4],
-                    "expedition": result[0][5]}
+                    "expedition": result[0][5],
+                    "price_express": result[0][6],
+                    "timedeliver_express": result[0][7]}
     else:
         response = {"city1": None, "city2": None, "weight": None, "price": None, "timedeliver": None, "expedition": None}
     return json.dumps(response)
