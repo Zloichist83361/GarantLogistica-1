@@ -115,6 +115,68 @@ def tracking_status():
 # Отслеживание -
 
 
+@app.route("/calculate/calc", methods=["GET"])
+def calc_price():
+    param = request.args.get('params')
+
+    # jsonData = """ {
+    #     "ID"       : 310450,
+    #     "login"    : "admin",
+    #     "name"     : "James Bond",
+    #     "password" : "root",
+    #     "phone"    : 3330303,
+    #     "email"    : " bond@mail.com",
+    #     "online"   : true
+    # } """
+    # dictData = json.loads(jsonData)
+    # print(dictData["name"])
+    # print(dictData["phone"])
+    # print(dictData["email"])
+    # print(dictData["online"])
+
+
+    # s = param.replace("{", '')
+    # s2 = s.replace("}", '')
+    # s3 = s2
+    #
+    # strtojson = {s3}
+    # s4 = dict(strtojson)
+    # jsonData = json.dumps(s4)
+
+
+
+
+    # dictData = json.loads(jsonData)
+    # print(dictData)
+    # jsData = json.dumps(dictData)
+
+    # city1 = dictData["city1"]
+    # city2 = dictData["city2"]
+    # places = dictData["places"]
+    # weight = dictData["weight"]
+    # volume = dictData["volume"]
+    # pick = dictData["pick"]
+    # deliver = dictData["deliver"]
+
+    s = param.split('/', maxsplit=-1)
+    weight = int(s[3])
+
+    con = sql.connect("garant_logistica.db")
+    cur = con.cursor()
+    strtoexec = "SELECT city1, city2, weight, price, timedeliver FROM prices WHERE city1 = '" + s[0] + "' AND city2 = '" + s[1] + "' AND weight >= " + s[3]
+    cur.execute("SELECT city1, city2, weight, price, timedeliver FROM prices WHERE city1 = '" + s[0] + "' AND city2 = '" + s[1] + "' AND weight >= " + s[3])
+    result = cur.fetchall()
+    if len(result) != 0:
+        response = {"city1": result[0][0],
+                    "city2": result[0][1],
+                    "weight": result[0][2],
+                    "price": result[0][3],
+                    "timedeliver": result[0][4]}
+    else:
+        response = {"city1": None, "city2": None, "weight": None, "price": None, "timedeliver": None}
+    return json.dumps(response)
+
+
 # Регистрация +
 @app.route('/reqlog', methods=["POST", "GET"])
 def reqlog_enter():

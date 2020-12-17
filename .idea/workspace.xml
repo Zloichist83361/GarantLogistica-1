@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d5b0351-371f-470e-be8e-7d6fa625b115" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/garant_logistica.db" beforeDir="false" afterPath="$PROJECT_DIR$/garant_logistica.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/calculate.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/calculate.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/calculate2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/calculate3.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/video/topvideo_zast.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/static/video/topvideo_zast.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/calculate.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/calculate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/calculate2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/calculate3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/samples/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/samples/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view.py" beforeDir="false" afterPath="$PROJECT_DIR$/view.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -184,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608045281258</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="calc changed">
+      <created>1608182100613</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1608182100613</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -209,6 +208,19 @@
     <MESSAGE value="docker" />
     <MESSAGE value="news changed" />
     <MESSAGE value="calc added" />
-    <option name="LAST_COMMIT_MESSAGE" value="calc added" />
+    <MESSAGE value="calc changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="calc changed" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="param[0]" language="Python" />
+        <watch expression="param[1]" language="Python" />
+        <watch expression="param" language="Python" />
+        <watch expression="dictData" language="Python" />
+        <watch expression="jsonData" language="Python" />
+        <watch expression="s[4]" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

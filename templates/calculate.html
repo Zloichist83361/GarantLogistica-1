@@ -39,45 +39,53 @@
             <div class="grid-container center-items">
                 <p>Откуда 1</p>
                 <label for="cityfrom"></label>
-                <input id="cityfrom" type="text" class="city-from">
+                <input id="cityfrom" type="text" class="city-from" oninput="calc_price()">
             </div>
             <div class="grid-container center-items">
                 <p>Куда 2</p>
                 <label for="cityto"></label>
-                <input id="cityto" type="text" class="city-to">
+                <input id="cityto" type="text" class="city-to" oninput="calc_price()">
                 
             </div>
             <div class="grid-container center-items">
                 <p>Кол-во мест 3</p>
-                <input type="number" pattern="[0-9]{3}" class="places">
+                <input id="places" type="number" pattern="[0-9]{3}" class="places" oninput="calc_price()">
 
             </div>
             <div class="grid-container center-items">
                 <p>Вес груза 4</p>
-                <input type="number" class="weight">
+                <input id="weight" type="number" class="weight" oninput="calc_price()">
             </div>
-            <div class="grid-container center-items">
+            <div class="grid-container center-items" oninput="calc_price()">
                 <p>Объем 5</p>
-                <input type="number" class="volume" id="volume" placeholder="0.01 м&sup3;" pattern="\d+(,\d{2})?" onblur="focus_lost('volume')" onclick="start_input_calc('volume')">
+                <input type="number" class="volume" id="volume" placeholder="0.01 м&sup3;" pattern="\d+(,\d{2})?" oninput="calc_price()" onblur="focus_lost('volume')" onclick="start_input_calc('volume')">
             </div>
             <div class="grid-container row-1">
                 <p>Необходимо забрать груз с адреса 6</p>
-                <input class="check-box" type="checkbox">
+                <input id="pick" class="check-box" type="checkbox" onclick="calc_price()">
             </div>
             <div class="grid-container row-1">
                 <p>Необходимо доставить груз до адреса 7</p>
-                <input class="check-box" type="checkbox">
+                <input id="deliver" class="check-box" type="checkbox" onclick="calc_price()">
             </div>
 
             <div class="grid-container center-items">Стоимость 8</div>
             <div class="grid-container center-items">Срок 9</div>
 
             <div class="grid-container center-items">Стандарт 10</div>
-            <div class="grid-container center-items">300 р. 11</div>
-            <div class="grid-container center-items">2 дня 12</div>
+            <div class="grid-container center-items">
+                <span id="st_price"></span>
+            </div>
+            <div class="grid-container center-items">
+                <span id="st_time"></span>
+            </div>
             <div class="grid-container center-items">Экспресс 13</div>
-            <div class="grid-container center-items">500 р. 14</div>
-            <div class="grid-container center-items">1 день 15</div>
+            <div class="grid-container center-items">
+                <span id="ex_price"></span>
+            </div>
+            <div class="grid-container center-items">
+                <span id="ex_time"></span>
+            </div>
 
         </div>
     </section>
