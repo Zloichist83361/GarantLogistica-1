@@ -21,7 +21,10 @@ function calc_price(){
     var pick = document.getElementById('pick').checked;
     var deliver = document.getElementById('deliver').checked;
     //params.push(city1, city2, places, weight, volume, pick, deliver);
-
+    var st_price = document.getElementById('st_price');
+    var st_time = document.getElementById('st_time');
+    var ex_price = document.getElementById('ex_price');
+    var ex_time = document.getElementById('ex_time');
 
     json = city1 + "/" + city2 + "/" + places + "/" + weight + "/" + volume + "/" + pick + "/" + deliver;
 
@@ -31,16 +34,35 @@ function calc_price(){
             var response = JSON.parse(this.responseText);
             if(response.price && response.timedeliver){
                 //console.log(response.price);
-                var st_price = document.getElementById('st_price');
-                var st_time = document.getElementById('st_time');
-                var ex_price = document.getElementById('ex_price');
-                var ex_time = document.getElementById('ex_time');
+                st_full = 0;
+                ex_full = 0;
+                if(pick == true){
+                    st_full = st_full + response.expedition;
+                    ex_full = ex_full + response.expedition;
+                    console.log(pick);
 
-                st_price.innerHTML = response.price + " р.";
+                }
+
+                  if(deliver == true){
+                    st_full = st_full + response.expedition;
+                    ex_full = ex_full + response.expedition;
+                    console.log(deliver);
+                }
+
+                   st_full = st_full + response.price;
+                   ex_full = ex_full + response.price;
+
+                st_price.innerHTML = st_full + " р.";
                 st_time.innerHTML = response.timedeliver;
-                ex_price.innerHTML = response.price + " р.";
+                ex_price.innerHTML = ex_full + " р.";
                 ex_time.innerHTML = response.timedeliver;
 
+            }else{
+
+                st_price.innerHTML = "";
+                st_time.innerHTML = "";
+                ex_price.innerHTML = "";
+                ex_time.innerHTML = "";
             }
 
         }
