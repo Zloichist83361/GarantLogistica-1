@@ -83,7 +83,6 @@ def about():
 
 
 @app.route('/calculate')
-@login_required
 def calculate():
     db = get_db()
     dbase = DataBase(db)
@@ -114,6 +113,32 @@ def tracking_status():
         response = {"order_status": None, "date_order_users": None}
     return json.dumps(response)
 # Отслеживание -
+
+@app.route("/calculate/calc", methods=["GET"])
+def calc_price():
+    param = request.args.get('params')
+
+    s = param.split('/', maxsplit=-1)
+    weight = float(s[3])
+    volume = float(s[4])
+    volumeWeigt = volume * 240
+    maxweight = max(weight, volumeWeigt)
+
+    con = sql.connect("garant_logistica.db")
+    cur = con.cursor()
+    #strtoexec = "SELECT city1, city2, weight, price, timedeliver FROM prices WHERE city1 = '" + s[0] + "' AND city2 = '" + s[1] + "' AND weight >= " + str(maxweight)
+    cur.execute("SELECT city1, city2, weight, price, timedeliver, expedition FROM prices WHERE city1 = '" + s[0] + "' AND city2 = '" + s[1] + "' AND weight >= " + str(maxweight))
+    result = cur.fetchall()
+    if len(result) != 0:
+        response = {"city1": result[0][0],
+                    "city2": result[0][1],
+                    "weight": result[0][2],
+                    "price": result[0][3],
+                    "timedeliver": result[0][4],
+                    "expedition": result[0][5]}
+    else:
+        response = {"city1": None, "city2": None, "weight": None, "price": None, "timedeliver": None, "expedition": None}
+    return json.dumps(response)
 
 
 # Регистрация +
@@ -193,6 +218,3 @@ def show_news(id_news):
         abort(404)
 
     return render_template('news.html', title=title, text=text)
-
-
-
