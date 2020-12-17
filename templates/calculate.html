@@ -1,59 +1,85 @@
 {% extends 'samples/base.html' %}
 
 {% block title %}
-Главная страница
+Калькулятор
 {% endblock %}
 {% include 'samples/header.html' %}
 
 
 {% block content %}
+    <script type="text/javascript">
+        $(function() {
+        var all_city = []
+        {%for city in cities %}
+
+        all_city.push('{{city[0]}}')
+
+        {% endfor %}
+            $('#cityto').autocomplete({
+                source: function(request, response) {
+                var results = $.ui.autocomplete.filter(all_city, request.term);
+
+                response(results.slice(0, 10));
+            }
+            })
+
+            $('#cityfrom').autocomplete({
+                source: function(request, response) {
+                var results = $.ui.autocomplete.filter(all_city, request.term);
+
+                response(results.slice(0, 10));
+            }
+            })
+        });
+    </script>
+
     <section class="calculate">
         <div class="container calculate-container">
 
-            <div class="calculate-cities row">
-                <input type="text" class="city-from" placeholder="Город отправления">
-                <input type="text" class="city-for" placeholder="Город поулчения">
+            <div class="grid-container center-items">
+                <p>Откуда 1</p>
+                <label for="cityfrom"></label>
+                <input id="cityfrom" type="text" class="city-from">
+            </div>
+            <div class="grid-container center-items">
+                <p>Куда 2</p>
+                <label for="cityto"></label>
+                <input id="cityto" type="text" class="city-to">
+                
+            </div>
+            <div class="grid-container center-items">
+                <p>Кол-во мест 3</p>
+                <input type="number" pattern="[0-9]{3}" class="places">
+
+            </div>
+            <div class="grid-container center-items">
+                <p>Вес груза 4</p>
+                <input type="number" class="weight">
+            </div>
+            <div class="grid-container center-items">
+                <p>Объем 5</p>
+                <input type="number" class="volume" id="volume" placeholder="0.01 м&sup3;" pattern="\d+(,\d{2})?" onblur="focus_lost('volume')" onclick="start_input_calc('volume')">
+            </div>
+            <div class="grid-container row-1">
+                <p>Необходимо забрать груз с адреса 6</p>
+                <input class="check-box" type="checkbox">
+            </div>
+            <div class="grid-container row-1">
+                <p>Необходимо доставить груз до адреса 7</p>
+                <input class="check-box" type="checkbox">
             </div>
 
-             <div class="calculate-dimensions-label row">
-                 <p class="calc-label-2 calculations-label-places">Количество мест</p>
-                 <p class="calc-label-2 calculations-label-price">Вес</p>
-                 <p class="calc-label-2 calculations-label-time">Объем</p>
-            </div>
+            <div class="grid-container center-items">Стоимость 8</div>
+            <div class="grid-container center-items">Срок 9</div>
 
-            <div class="calculate-dimensions row">
-                <div class="dimensions"><input type="text" class="dim-places" placeholder="Количество мест"></div>
-                <div class="dimensions"><input type="text" class="dim-weight" placeholder="Вес"></div>
-                <div class="dimensions"><input type="text" class="dim-volume" placeholder="Объем"></div>
-            </div>
+            <div class="grid-container center-items">Стандарт 10</div>
+            <div class="grid-container center-items">300 р. 11</div>
+            <div class="grid-container center-items">2 дня 12</div>
+            <div class="grid-container center-items">Экспресс 13</div>
+            <div class="grid-container center-items">500 р. 14</div>
+            <div class="grid-container center-items">1 день 15</div>
 
-            <div class="calculations">
-                <div class="calculations-header row">
-                    <p class="calc-label calculations-label-empty"></p>
-                    <p class="calc-label calculations-label-price margin-left">Стандарт</p>
-                    <p class="calc-label calculations-label-time margin-left">Экспресс</p>
-
-                </div>
-
-                <div class="calculations-standart row">
-                    <p class="calc-label calculations-standart-label">Стоимость</p>
-                    <p class="calc-label calculations-standart-price margin-left">300 р.</p>
-                    <p class="calc-label calculations-standart-time margin-left">2 дня</p>
-                </div>
-
-                <div class="calculations-express row">
-                    <p class="calc-label calculations-express-label">Срок</p>
-                    <p class="calc-label calculations-express-price margin-left">500 р.</p>
-                    <p class="calc-label calculations-express-time margin-left">1 день</p>
-                </div>
-            </div>
-
-            <div class="calculations-express row">
-                <input type="button" class="make-oreder-btn" value="Оформить заявку">
-            </div>
         </div>
-
-
     </section>
 
 

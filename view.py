@@ -82,6 +82,14 @@ def about():
 # Основные страницы -
 
 
+@app.route('/calculate', methods=['POST', 'GET'])
+def calculate():
+    db = get_db()
+    dbase = DataBase(db)
+    city = dbase.getCity()
+    return render_template('calculate.html', cities=city)
+
+
 # Отслеживание +
 @app.route('/tracking')
 def tracking():
@@ -160,12 +168,6 @@ def profile(param=''):
     # loadpage.extra = False
     return render_template("profile.html", loadpage=param)
 
-
-@app.route('/calculate')
-def calculate():
-    return render_template("calculate3.html")
-
-
 @app.route('/order')
 @login_required
 def order():
@@ -189,3 +191,6 @@ def show_news(id_news):
         abort(404)
 
     return render_template('news.html', title=title, text=text)
+
+
+

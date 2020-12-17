@@ -81,3 +81,13 @@ class DataBase:
 
         return []
 
+    def getCity(self):
+        try:
+            self.__cur.execute(f'SELECT name_city FROM city')
+            res = self.__cur.fetchall()
+            if res:
+                return res
+        except sqlite3.Error as e:
+            logger.error("Ошибка получения данных из БД " + str(e))
+
+        return []
