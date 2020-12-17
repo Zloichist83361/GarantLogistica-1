@@ -10,14 +10,22 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/videobackground.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/trackbar.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/profile.css') }}">
-     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles_news.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/news.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/calculate.css') }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/ui-darkness/jquery-ui.css">
+    <script src="/static/js/script.js"></script>
     <title>{% block title %}{% endblock %}</title>
 </head>
 
 <body>
+    <div class="content-all">
     {% block content %}{% endblock %}
-    <footer class="container py-5">
+        </div>
+    <footer class="py-5 footer-block">
+        <div class="footer-container container">
   <div class="row">
     <div class="col-6 col-md">
       <h5>Услуги</h5>
@@ -69,6 +77,7 @@
       </ul>
     </div>
   </div>
+        </div>
 </footer>
  <script src="/static/js/tracking.js"></script>
 

@@ -1,0 +1,86 @@
+{% extends 'samples/base.html' %}
+
+{% block title %}
+Калькулятор
+{% endblock %}
+{% include 'samples/header.html' %}
+
+
+{% block content %}
+    <script type="text/javascript">
+        $(function() {
+        var all_city = []
+        {%for city in cities %}
+
+        all_city.push('{{city[0]}}')
+
+        {% endfor %}
+            $('#cityto').autocomplete({
+                source: function(request, response) {
+                var results = $.ui.autocomplete.filter(all_city, request.term);
+
+                response(results.slice(0, 10));
+            }
+            })
+
+            $('#cityfrom').autocomplete({
+                source: function(request, response) {
+                var results = $.ui.autocomplete.filter(all_city, request.term);
+
+                response(results.slice(0, 10));
+            }
+            })
+        });
+    </script>
+
+    <section class="calculate">
+        <div class="container calculate-container">
+
+            <div class="grid-container center-items">
+                <p>Откуда 1</p>
+                <label for="cityfrom"></label>
+                <input id="cityfrom" type="text" class="city-from">
+            </div>
+            <div class="grid-container center-items">
+                <p>Куда 2</p>
+                <label for="cityto"></label>
+                <input id="cityto" type="text" class="city-to">
+
+            </div>
+            <div class="grid-container center-items">
+                <p>Кол-во мест 3</p>
+                <input type="number" pattern="[0-9]{3}" class="places">
+
+            </div>
+            <div class="grid-container center-items">
+                <p>Вес груза 4</p>
+                <input type="number" class="weight">
+            </div>
+            <div class="grid-container center-items">
+                <p>Объем 5</p>
+                <input type="number" class="volume" id="volume" placeholder="0.01 м&sup3;" pattern="\d+(,\d{2})?" onblur="focus_lost('volume')" onclick="start_input_calc('volume')">
+            </div>
+            <div class="grid-container row-1">
+                <p>Необходимо забрать груз с адреса 6</p>
+                <input class="check-box" type="checkbox">
+            </div>
+            <div class="grid-container row-1">
+                <p>Необходимо доставить груз до адреса 7</p>
+                <input class="check-box" type="checkbox">
+            </div>
+
+            <div class="grid-container center-items">Стоимость 8</div>
+            <div class="grid-container center-items">Срок 9</div>
+
+            <div class="grid-container center-items">Стандарт 10</div>
+            <div class="grid-container center-items">300 р. 11</div>
+            <div class="grid-container center-items">2 дня 12</div>
+            <div class="grid-container center-items">Экспресс 13</div>
+            <div class="grid-container center-items">500 р. 14</div>
+            <div class="grid-container center-items">1 день 15</div>
+
+        </div>
+    </section>
+
+
+{% endblock %}
