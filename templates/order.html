@@ -1,0 +1,106 @@
+{% extends 'samples/base.html' %}
+
+{% block title %}
+Расчет и оформление заказа
+{% endblock %}
+{% include 'samples/header.html' %}
+
+
+{% block content %}
+    <script type="text/javascript">
+        $(function() {
+        var all_city = []
+        {%for city in cities %}
+
+        all_city.push('{{city[0]}}')
+
+        {% endfor %}
+            $('#cityto').autocomplete({
+                source: function(request, response) {
+                var results = $.ui.autocomplete.filter(all_city, request.term);
+
+                response(results.slice(0, 10));
+            }
+            })
+
+            $('#cityfrom').autocomplete({
+                source: function(request, response) {
+                var results = $.ui.autocomplete.filter(all_city, request.term);
+
+                response(results.slice(0, 10));
+            }
+            })
+        });
+    </script>
+
+    <section class="order_calculation">
+        <div class="order_calc">
+            <div class="order_city">
+                <label for="cityfrom"></label>
+                <p>Откуда<span class="required-field"></span><input id="cityfrom" type="text" required="required" class="city-from" oninput="#"></p>
+                <p><input type="radio" name="ot" value="ot_address">От адреса<input type="radio" name="ot" value="ot_treminal">От терминала</p>
+                <label for="address"></label>
+                <p>Адрес<span class="required-field"></span><input id="address" type="text" required="required" class="add" placeholder="Улица,дом"></p>
+                <label for="date"></label>
+                <p>Дата забора груза<span class="required-field"></span><input id="date" type="date" name="calendar" required="required"></p>
+                <div class="tabs js-tabs">
+                    <ul class="tab-header">
+                        <li class="tab-header__item js-tab-trigger active" data-tab="1">Утренний интервал</li>
+                        <li class="tab-header__item js-tab-trigger" data-tab="2">Дневной интервал</li>
+                        <li class="tab-header__item js-tab-trigger" data-tab="3">Вечерний интервал</li>
+                    </ul>
+
+                   <ul class="tab-content">
+                        <li class="tab-content__item js-tab-content active" data-tab="1">Содержимое Уи</li>
+                        <li class="tab-content__item js-tab-content" data-tab="2">Содержимое Ди</li>
+                        <li class="tab-content__item js-tab-content" data-tab="3">Содержимое Ви</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="order_city1">
+                <label for="cityto"></label>
+                <p>Куда<span class="required-field"></span><input id="cityto" type="text" required="required" class="city-to" oninput="#"></p>
+                <p><input type="radio" name="ot" value="ot_address">От адреса<input type="radio" name="ot" value="ot_treminal">От терминала</p>
+                <label for="terminal"></label>
+                <p>Терминал<input id="terminal" type="text" class="term" oninput="#"></p>
+            </div>
+            <div class="tabs js-tabs">
+                <ul class="tab-header">
+                    <li class="tab-header__item js-tab-trigger active" data-tab="1">1 место</li>
+                    <li class="tab-header__item js-tab-trigger" data-tab="2">Несколько мест</li>
+                    <li class="tab-header__item js-tab-trigger" data-tab="3">Документы</li>
+                </ul>
+
+                <ul class="tab-content">
+                    <li class="tab-content__item js-tab-content active" data-tab="1">Содержимое 1 место</li>
+                    <li class="tab-content__item js-tab-content" data-tab="2">Содержимое Несколько мест</li>
+                    <li class="tab-content__item js-tab-content" data-tab="3">Содержимое Документы</li>
+                </ul>
+            </div>
+
+                <div class="transporation">
+                    <p>Вид перевозки<select>
+                        <option>Стандарт</option>
+                        <option>Экспресс</option>
+                        <option>Конверт</option>
+                    </select></p>
+                </div>
+            <div>
+                <p>Характер груза<span class="required-field"></span><input type="text" class="goods"></p>
+            </div>
+            <div class="counterparties">
+                <p>Отправитель<span class="required-field"></span><input type="text" class="sender"></p>
+                <p>Плательщик<span class="required-field"></span><input type="text" class="payer"></p>
+            </div>
+            <div class="counterparties">
+                <p>Получатель<span class="required-field"></span><input type="text" class="recipient"></p>
+                <p>Заказчик<span class="required-field"></span><input type="text" class="customer"></p>
+            </div>
+            <div style="text-align:center">
+                <input type="submit" value="Оформить заказ" />
+            </div>
+        </div>
+    </section>
+
+<script src="/static/js/order.js"></script>
+{% endblock %}

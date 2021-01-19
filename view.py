@@ -114,6 +114,7 @@ def tracking_status():
     return json.dumps(response)
 # Отслеживание -
 
+
 @app.route("/calculate/calc", methods=["GET"])
 def calc_price():
     param = request.args.get('params')
@@ -139,6 +140,7 @@ def calc_price():
     else:
         response = {"city1": None, "city2": None, "weight": None, "price": None, "timedeliver": None, "expedition": None}
     return json.dumps(response)
+
 
 
 # Регистрация +
@@ -196,9 +198,9 @@ def profile(param=''):
 
 
 @app.route('/order')
-@login_required
+#@login_required
 def order():
-    return render_template("index.html")
+    return render_template("order.html")
 
 
 @app.route('/news')
