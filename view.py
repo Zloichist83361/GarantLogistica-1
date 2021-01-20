@@ -200,7 +200,14 @@ def profile(param=''):
 @app.route('/order')
 #@login_required
 def order():
-    return render_template("order.html")
+    db = get_db()
+    dbase = DataBase(db)
+    city = dbase.getCity()
+    return render_template('order.html', cities=city)
+
+
+def order_price():
+    pass
 
 
 @app.route('/news')

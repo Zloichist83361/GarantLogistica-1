@@ -1,8 +1,42 @@
-.order_calculation {
+
+/*.order_calc{
+    width: 100%;
+    align-items: center;
+}
+
+.cities{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+
+}*/
+
+.other{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+/*.order_city {
+    width: 50%;
+    padding: 10px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.note {
+    float: right;
+    border: 1px solid;
+    padding: 0 10px;
+    margin: 5px 0 5px 10px;
+    width: 120px;
+    font-size: 0.9em;
+}
+
+.note P { margin: 0.6em 0;}*/
 
 .tabs {
     width: 100%;
@@ -51,48 +85,100 @@
     display: block;
 }
 
+.order-container{
+    padding: 0;
+    margin: 0;
+}
+
+.grid-container{
+    padding: 0;
+    margin: 0;
+}
+
+.grid-container p {
+    padding: 0;
+    margin: 0;
+}
+
+.order-container{
+    display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap: 5px;
+}
+
+.order-container div:nth-child(1){
+    grid-column: 1 / 4;
+    grid-row: 1;
+
+}
+
+.order-container div:nth-child(2){
+    grid-column: 4 / -1;
+    grid-row: 1;
+}
+
+.order-container div:nth-child(3){
+    grid-column: 1 / 4;
+    grid-row: 2;
+}
+
+.order-container div:nth-child(4){
+    grid-column: 4 / -1;
+    grid-row: 2;
+}
+
+.order-container div:nth-child(5){
+    grid-column: 1 / 4;
+    grid-row: 3;
+}
+
+.order-container div {
+	font-size: 18px;
+	font-family: roboto;
+}
+
 .required-field::before {
      content: "*";
      color: red;
 }
 
 .city-from {
-    padding-left: 5px;
     border-radius: 10px;
 }
 
 .city-to {
-    padding-left: 5px;
     border-radius: 10px;
 }
 
-.add {
-    padding-left: 5px;
+.address {
     border-radius: 10px;
 }
 
-.term {
-    padding-left: 5px;
+.terminal {
     border-radius: 10px;
 }
 
-.goods {
+.length {
     padding-left: 5px;
 }
 
-.sender {
+.width {
     padding-left: 5px;
 }
 
-.payer {
+.height {
     padding-left: 5px;
 }
 
-.recipient {
+.weight {
     padding-left: 5px;
 }
 
-.customer {
+.quantity {
     padding-left: 5px;
+}
+
+.button{
+    text-align:center;
 }
 

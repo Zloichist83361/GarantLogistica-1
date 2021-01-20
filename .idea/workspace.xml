@@ -6,23 +6,10 @@
     </enabled-run-configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4b8dcdc-8e0a-406b-b1de-3222f7d69e0a" name="Default Changelist" comment="1">
-      <change afterPath="$PROJECT_DIR$/static/css/cookie.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/news.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/order.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/cookie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/order.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/coockie.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/order.html" afterDir="false" />
+    <list default="true" id="e4b8dcdc-8e0a-406b-b1de-3222f7d69e0a" name="Default Changelist" comment="заявка на забор груза">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/garant_logistica.db" beforeDir="false" afterPath="$PROJECT_DIR$/garant_logistica.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gl.log" beforeDir="false" afterPath="$PROJECT_DIR$/gl.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/styles_news.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/calculate.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/calculate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/news.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/samples/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/samples/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/samples/news_currentnew.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/samples/news_currentnew.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/order.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/order.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/order.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view.py" beforeDir="false" afterPath="$PROJECT_DIR$/view.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -329,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608214641326</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="заявка на забор груза">
+      <created>1611066632448</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1611066632449</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -368,6 +362,7 @@
     <MESSAGE value="минус лейбл" />
     <MESSAGE value="стиль для городов поменян" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="заявка на забор груза" />
+    <option name="LAST_COMMIT_MESSAGE" value="заявка на забор груза" />
   </component>
 </project>
