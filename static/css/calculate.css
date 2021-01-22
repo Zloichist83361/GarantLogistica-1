@@ -102,7 +102,6 @@ grid-column: 5 / -1;
 	padding: 8px 15px;
 	color: #ffffff;
 	font-size: 18px;
-	font-family: roboto;
 }
 
 .calculate-container div:nth-child(odd) {

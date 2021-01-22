@@ -26,4 +26,3 @@ jsTabs.forEach(function(item) {
 
 
 
-

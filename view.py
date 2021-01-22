@@ -206,7 +206,7 @@ def order():
     return render_template('order.html', cities=city)
 
 
-def order_price():
+def order_form():
     pass
 
 

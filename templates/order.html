@@ -7,29 +7,8 @@
 
 
 {% block content %}
-                            <title>:hover</title>
-                        <style>
-   [data-tooltip] {
-    position: relative;
-   }
-   [data-tooltip]::after {
-    content: attr(data-tooltip);
-    position: absolute;
-    width: 300px;
-    left: 0; top: 0;
-    background: green;
-    color: #fff;
-    padding: 0.5em;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    pointer-events: none;
-    opacity: 0;
-    transition: 1s;
-   }
-   [data-tooltip]:hover::after {
-    opacity: 1;
-    top: 2em;
-   }
-  </style>
+<title>:hover</title>
+
 <script type="text/javascript">
         $(function() {
         var all_city = []
@@ -56,25 +35,52 @@
         });
 </script>
 
+<!--<script type="text/javascript">
+    $(function () {
+        $("#datepicker").datepicker();
+});
+</script>-->
+
 <section>
     <section class="order">
 
         <div class="container order-container">
             <div class="grid-container center-items">
+                <div class="col-xs-12 col-md-6">
+                    <div class="form-reg">
                 <p>Откуда<span class="required-field"></span></p>
                     <label for="cityfrom"></label>
                         <input id="cityfrom" type="text" class="city-from" oninput="#">
-                            <p><input class="custom-radio" type="radio" name="ot" value="ot_address">От адреса&emsp;<input class="custom-radio" type="radio" name="ot" value="ot_terminal">От терминала</p>
-            </div>
+                            <label>
+                                <input class="radio_option" type="radio" name="optionsRadios" id="optionsRadios1" checked="checked" value="options1">От адреса</label>
+                            <label>
+                                <div class="form-group reg-conto">
+                                <input class="radio_option" type="radio" name="optionsRadios" id="optionsRadios2" value="options2">От терминала</label>
+                                    <div class="grid-container center-items">
+                                        </div>
+                                       <!-- <p>Адрес<span class="required-field"></span></p>-->
+                                            <input id="address" type="text" class="address"  placeholder="Адрес" oninput="#">
+                                        <div id="mask" style="display:none;"></div>
+                                        <!--<p>Терминал</p>-->
+                                            <input id="terminal" type="text" class="terminal" placeholder="Терминал" oninput="#">
+                                        </div>
 
-            <div class="grid-container center-items">
+                    </div>
+            </div>
+                          <!--  <p><input class="custom-radio" type="radio" name="ot" value="ot_address">От адреса&emsp;<input class="custom-radio" type="radio" name="ot" value="ot_terminal">От терминала</p>-->
+            </div>
+           <!-- <div class="grid-container center-items">
                 <p>Куда<span class="required-field"></span></p>
                     <label for="cityto"></label>
                         <input id="cityto" type="text" class="city-to" oninput="#">
-                            <p><input class="custom-radio" type="radio" name="do" value="do_address">До адреса&emsp;<input class="custom-radio" type="radio" name="do" value="do_terminal" class="doterm">До терминала</p>
+                            <label>
+                                <input class="radio_option" type="radio" name="optionsRadios" id="optionsRadios3" value="options3" checked="checked">До адреса</label>
+                            <label>
+                                <input class="radio_option" type="radio" name="optionsRadios" id="optionsRadios4" value="options4" checked="checked">До терминала</label>
+                           <p><input class="custom-radio" type="radio" name="do" value="do_address">До адреса&emsp;<input class="custom-radio" type="radio" name="do" value="do_terminal" class="doterm">До терминала</p>-->
             </div>
 
-            <div class="grid-container center-items">
+            <!--<div class="grid-container center-items">
                 <p>Адрес<span class="required-field"></span></p>
                     <input id="address" type="text" class="address" oninput="#">
             </div>
@@ -82,14 +88,22 @@
             <div class="grid-container center-items">
                 <p>Терминал</p>
                     <input id="terminal" type="text" class="terminal" oninput="#">
-            </div>
+            </div>-->
 
             <div class="grid-container center-items">
                 <p>Дата забора груза<span class="required-field"></span></p>
-                    <input id="date" type="date" class="date">
+                    <input  type="date" class="date">
             </div>
         </div>
-
+        <div class="block-price">
+            <strong>Расчет</strong>
+            <p>Забор груза 300 руб</p>
+            <p>Межтерминальная перевозка 400 руб</p>
+            <p>Страхование 20 руб</p>
+            <strong>Сроки</strong>
+            <p>Стандарт 3 дня</p>
+            <p>Экспресс 2 дня</p>
+        </div>
     </section>&thinsp;
 
     <section class="other">
@@ -156,12 +170,12 @@
 
                         <div class="grid-container center-items">
                             <p>Общий объем<span class="required-field"></span></p>
-                             <input type="number" class="width" oninput="#">
+                             <input type="number" class="size" oninput="#">
                          </div>
 
                         <div class="grid-container center-items">
                             <p>Кол-во мест<span class="required-field"></span></p>
-                             <input type="number" class="height" oninput="#">
+                             <input type="number" class="quantity" oninput="#">
                          </div>
 
                         <div class="grid-container center-items">
@@ -171,19 +185,19 @@
 
                         <div class="grid-container center-items">
                             <p>Самое широкое<span class="required-field"></span></p>
-                             <input type="number" class="size" oninput="#">
+                             <input type="number" class="width" oninput="#">
                          </div>
 
                         <div class="grid-container center-items">
                             <p>Самое высокое<span class="required-field"></span></p>
-                             <input type="number" class="quantity" oninput="#">
+                             <input type="number" class="height" oninput="#">
                          </div>
                         <div class="grid-container center-items">
                             <p>Самое тяжелое<span class="required-field"></span></p>
-                             <input type="number" class="quantity" oninput="#">
+                             <input type="number" class="size" oninput="#">
                          </div>
                         <div class="grid-container center-items">
-                            <p data-tooltip="Грузовое место считается негабаритным, если вес места не менее 500 кг или одно из измерений больше либо равно 3 метров">Негабарит!</p>
+                            <p class="negabar" data-tooltip="Грузовое место считается негабаритным, если вес места не менее 500 кг или одно из измерений больше либо равно 3 метров" data-tooltip-location="right">Негабарит!</p>
                          </div>
                     </div>
                 </li>
@@ -191,28 +205,27 @@
                      <div class="container place-container">
                          <div class="grid-container center-items">
                             <p>Длина(см)<span class="required-field"></span></p>
-                             <input type="number" class="length" oninput="#">
+                             <input type="number" class="length" value="31" oninput="#">
                          </div>
 
                         <div class="grid-container center-items">
                             <p>Ширина(см)<span class="required-field"></span></p>
-                             <input type="number" class="length" oninput="#">
+                             <input type="number" class="width" value="25" oninput="#">
                          </div>
 
                         <div class="grid-container center-items">
                             <p>Высота(см)<span class="required-field"></span></p>
-                             <input type="number" class="length" oninput="#">
+                             <input type="number" class="height" value="3" oninput="#">
                          </div>
 
                         <div class="grid-container center-items">
                             <p>Вес(кг)<span class="required-field"></span></p>
-                             <input type="number" class="length" oninput="#">
+                             <input type="number" class="weight" value="2" oninput="#">
                          </div>
                      </div>
                 </li>
             </ul>
-        </div>
-        &thinsp;
+        </div>&thinsp;
         <div class="container character-container">
                 <div class="grid-container center-items">
         <div>
@@ -221,8 +234,17 @@
             </div>
             </div>
         </div>
-            <p>Участники грузоперевозки</p>
-
+        <div class="dop_uslugi">
+            <input type="checkbox" id="hd-1" class="hide"/>
+            <label for="hd-1">Дополнительные услуги</label>
+        <div>
+            <p><input type="checkbox">Страховка</p>
+            <p><input type="checkbox">Страховка</p>
+            <p><input type="checkbox">Страховка</p>
+        </div>
+        <br/>
+        <input type="checkbox" id="hd-2" class="hide"/>
+            <label for="hd-2">Участники грузоперевозки</label>
             <div class="container order-container">
                 <div class="grid-container center-items">
                     <p>Отправитель<span class="required-field"></span></p>
@@ -247,17 +269,14 @@
         </div>
         </div>
         </div>
+        </div>
         <div class="button">
-            <br/>
-            <br/>
                 <input class="but" type="submit" value="Оформить заказ" />
         </div>
     </div>
     </section>
 </section>
-
+<script src="/static/js/cityfrom_radio.js"></script>
 <script src="/static/js/order.js"></script>
-<script src="/static/js/dopuslugi.js"></script>
-
 
 {% endblock %}

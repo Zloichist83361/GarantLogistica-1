@@ -1,5 +1,5 @@
 const container_status = document.querySelector('.container-status');
- const container_status_none = document.querySelector('.container-status-none');
+const container_status_none = document.querySelector('.container-status-none');
 
  function check_status() {
         var req = new XMLHttpRequest();
@@ -20,10 +20,8 @@ const container_status = document.querySelector('.container-status');
                 statustext3.innerHTML = "Статус оплаты: " + response.payment;
                 statustext4.innerHTML = "Дата доставки: " + response.date_delivery;
                 statustext5.innerHTML = "Направление: " + response.direction;
-            //result.innerHTML = "На " + response.date_order_users + " статус: " + response.order_status;
             container_status.classList.contains('open') ? container_status.classList.remove('open') : container_status.classList.add('open');
           } else {
-            //result.innerHTML = "Нихуя";
             container_status_none.classList.contains('open-none') ? container_status_none.classList.remove('open-none') : container_status_none.classList.add('open-none');
           }
         }
