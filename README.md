@@ -1,3 +1,5 @@
-# Сайт Гарант-Логистика
+# website LLC Garant-Logistics
 
-Два программиста из Москвы и Кирова, пытаються обуздать Санкт-Петербург
+The project is not completed
+
+
